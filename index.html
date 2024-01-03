@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smooth Scrolling page</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer
+    ></script>
+    <script src="smoothscroll.js" defer></script>
+    <script src="script.js" defer></script>
+    
+    </head>
+    <body>
+        <header> 
+            <h1>Cute Cats Smooth Scroll</h1>
+            <nav>
+                <ul>
+                    <li><a href="#first" class="selected">1st Section</a></li>
+                    <li><a href="#second">2nd Section</a></li>
+                    <li><a href="#third">3rd Section</a></li>
+                    <li><a href="#fourth">4th Section</a></li>
+                    <li><a href="#fifth">5th Section</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="first">
+            <article>
+                <div>
+                    <h1>Section One</h1>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem non incidunt nisi reprehenderit
+                        vitae consectetur inventore, ut alias iure voluptas explicabo. Totam excepturi veniam beatae cumque
+                        illum iusto ducimus itaque, quae, ad architecto voluptatem. Dolores, itaque dicta. Obcaecati neque
+                        tenetur, saepe nesciunt dicta molestiae aspernatur blanditiis voluptates atque ut inventore?
+                    </p>
+                </div>
+                <img id="image1"  src=".//images/image7.jpg" alt="kitten" />
+            </article>
+        </section>
+
+        <section id="second">
+            <h1>Section two</h1>
+            <div>
+                <article>
+                    <img src=".//images/image2.jpg" alt="kitten" />
+                    <h2>Kittens Rules!</h2>    
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iusto sint ipsam nobis aspernatur
+                        nihil fugiat molestias tenetur laudantium debitis. Odio, nisi distinctio vel nihil amet architecto
+                        recusandae temporibus voluptate consequatur quasi, ullam neque veniam quaerat sit nesciunt atque
+                        exercitationem vitae sequi commodi? Aliquid voluptate atque minus voluptatibus labore error?
+                    </p>
+                </article>
+                <article>
+                    <img src=".//images/image3.jpg" alt="kitten" />
+                    <h2>Kittens Rules!</h2>    
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iusto sint ipsam nobis aspernatur
+                        nihil fugiat molestias tenetur laudantium debitis. Odio, nisi distinctio vel nihil amet architecto
+                        recusandae temporibus voluptate consequatur quasi, ullam neque veniam quaerat sit nesciunt atque
+                        exercitationem vitae sequi commodi? Aliquid voluptate atque minus voluptatibus labore error?
+                    </p>
+                </article>
+                <article>
+                    <img src=".//images/image4.jpg" alt="kitten" />
+                    <h2>Kittens Rules!</h2>    
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt iusto sint ipsam nobis aspernatur
+                        nihil fugiat molestias tenetur laudantium debitis. Odio, nisi distinctio vel nihil amet architecto
+                        recusandae temporibus voluptate consequatur quasi, ullam neque veniam quaerat sit nesciunt atque
+                        exercitationem vitae sequi commodi? Aliquid voluptate atque minus voluptatibus labore error?
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="third">
+           <h1>Section Three</h1>
+           <article>
+            <img src=".//images/image5.jpg" alt="kitten" />
+
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem non incidunt nisi reprehenderit
+                vitae consectetur inventore, ut alias iure voluptas explicabo. Totam excepturi veniam beatae cumque
+                illum iusto ducimus itaque, quae, ad architecto voluptatem. Dolores, itaque dicta. Obcaecati neque
+                tenetur, saepe nesciunt dicta molestiae aspernatur blanditiis voluptates atque ut inventore?
+            </p>
+
+           </article>
+        </section>
+
+        <section id="fourth">
+            <h1>Section Four</h1>
+            <article>
+             <img src=".//images/image9.jpg" alt="kitten" />
+            </article>
+         </section>
+ 
+         <section id="fifth">
+            <h1>Section Five</h1>
+            <div>
+                <article>
+                    <img src=".//images/image7.jpg" alt="kitten" />
+                    <h2>Kitten Rule!</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem non incidunt nisi reprehenderit
+                        vitae consectetur inventore, ut alias iure voluptas explicabo. Totam excepturi veniam beatae cumque
+                        illum iusto ducimus itaque, quae, ad architecto voluptatem. Dolores, itaque dicta. Obcaecati neque
+                        tenetur, saepe nesciunt dicta molestiae aspernatur blanditiis voluptates atque ut inventore?
+                    </p>
+        
+                   </article>
+                   <article>
+                       <img src=".//images/image5.jpg" alt="kitten" />
+                       <h2>Kitten Rule!</h2>
+                       <p>
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem non incidunt nisi reprehenderit
+                           vitae consectetur inventore, ut alias iure voluptas explicabo. Totam excepturi veniam beatae cumque
+                           illum iusto ducimus itaque, quae, ad architecto voluptatem. Dolores, itaque dicta. Obcaecati neque
+                           tenetur, saepe nesciunt dicta molestiae aspernatur blanditiis voluptates atque ut inventore?
+                       </p>
+           
+                      </article>
+            </div>
+            
+         </section>
+
+    </body>
+</html>
